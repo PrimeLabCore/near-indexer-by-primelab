@@ -30,7 +30,7 @@ jobs:
       - name: Login to Public ECR
         uses: docker/login-action@v1
         with:
-          registry: public.ecr.aws/r7z8c2r4
+          registry: public.ecr.aws
           username: AWS
           password: ${{ env.ECR_DOCKER_PASSWORD }}
       - name: Cache Docker layers
