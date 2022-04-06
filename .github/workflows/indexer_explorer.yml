@@ -42,7 +42,7 @@ jobs:
           context: ./dockerfile/
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ steps.login-ecr.outputs.registry }}/near/indexer-explorer:${{ github.event.inputs.version }}
+          tags: ${{ steps.login-ecr.outputs.registry }}/r7z8c2r4/near/indexer-explorer:${{ github.event.inputs.version }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
       - name: Move cache

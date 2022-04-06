@@ -6,7 +6,7 @@ script_dirpath="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 #                                       Arg Parsing & Validation
 # ==================================================================================================
 show_helptext_and_exit() {
-    echo "Usage: $(basename "${0}") diesel_binary_filepath database_url indexer_binary_filepath [extra_indexer_param]..."
+    echo "Usage: $(basename "${0}") diesel_binary_filepath database_url indexer_binary_filepath chain_id download_archive sync_command sync_delta [extra_indexer_param]..."
     echo ""
     echo "  diesel_binary_filepath  The filepath to the Diesel binary that will be used to run the database migration"
     echo "  database_url            The URL of the database against which the Diesel migration should be run, and the "
