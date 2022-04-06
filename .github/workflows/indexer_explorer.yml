@@ -23,7 +23,7 @@ jobs:
           aws-region: us-east-1
           role-skip-session-tagging: true
       - name: Get ECR Password
-        run: echo "ECR_DOCKER_PASSWORD=$(echo aws ecr-public get-login-password --region us-east-1)" >> $GITHUB_ENV
+        run: echo "ECR_DOCKER_PASSWORD=$(aws ecr-public get-login-password --region us-east-1)" >> $GITHUB_ENV
       - name: Set up Docker Buildx
         id: buildx
         uses: docker/setup-buildx-action@master
